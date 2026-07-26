@@ -166,7 +166,12 @@
     color:var(--ink);
     font-family:var(--rvserif);
     overflow:hidden;
+    /* Cap and centre the sheet so the report reads as a document, not a
+       full-width band. Scout reports are a narrow two-column list and get a
+       tighter cap than battles. */
+    max-width:760px;margin-left:auto;margin-right:auto;
   }
+  #out .panel.scout{max-width:560px}
   /* The dark-page selection colour swallows this sheet's text. */
   #out ::selection{background:#e6d38a;color:#241f10}
   #out ::-moz-selection{background:#e6d38a;color:#241f10}
@@ -653,7 +658,7 @@ function scout(doc){
     items.forEach(function(it){row(it[0],n(it[1]));});
   }
 
-  return "<div class='panel' style='margin-top:22px'>"+
+  return "<div class='panel scout' style='margin-top:22px'>"+
     "<div class='tw'><table class='gr-t gr-scout'>"+out.join("")+"</table></div>"+
     "<div class='gr-note'>You can get more detailed intelligence by upgrading the Informatics.</div>"+
   "</div>";
