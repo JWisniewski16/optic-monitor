@@ -1,6 +1,6 @@
 {
-    "version":  "1.34.0",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.34.0.exe",
-    "notes":  "Report Viewer is live. Paste any battle or scout report and read it laid out the way the game lays it out, with the real troop and hero art - then share it with a short link that opens in any browser, on any device.\nThe same viewer runs at opticmonitor.com, so anyone can read a report you send them without installing anything.\nReports are archived, so a link keeps working long after the game deletes the original file.\nNew Tools section, report themes, and Random Ports now tracked on the Items tab.",
+    "version":  "1.35.0",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.35.0.exe",
+    "notes":  "New: Hero Persuasion, Hero Experience and Troop Building calculators\nNew: automatic account and goals backup, with one-click restore\nFavorite an account from the Bots list\nProxy lists can now include headings and notes\nFixed a long-uptime slowdown and a same-name hero data bug",
     "mandatory":  false
 }
