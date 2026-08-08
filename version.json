@@ -1,6 +1,6 @@
 {
-    "version":  "1.35.0",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.35.0.exe",
-    "notes":  "New: Hero Persuasion, Hero Experience and Troop Building calculators\nNew: automatic account and goals backup, with one-click restore\nFavorite an account from the Bots list\nProxy lists can now include headings and notes\nFixed a long-uptime slowdown and a same-name hero data bug",
+    "version":  "1.35.1",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.35.1.exe",
+    "notes":  "Fixed: launching several bots at once no longer drops any\nFixed: favouriting from the Bots list now reaches the Favorites tab\nStays responsive when the disk is busy\nItems tab now shows Penicillin and other missing items\nTroop Builder tidy-up",
     "mandatory":  false
 }
