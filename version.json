@@ -1,6 +1,6 @@
 {
-    "version":  "1.35.1",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.35.1.exe",
-    "notes":  "Fixed: launching several bots at once no longer drops any\nFixed: favouriting from the Bots list now reaches the Favorites tab\nStays responsive when the disk is busy\nItems tab now shows Penicillin and other missing items\nTroop Builder tidy-up",
+    "version":  "1.35.2",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.35.2.exe",
+    "notes":  "Fixed: Penicillin was reading the wrong item - counts now correct\nAlerts now show when they came in\nStartup failures now show a banner instead of an empty-looking app",
     "mandatory":  false
 }
