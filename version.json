@@ -1,6 +1,6 @@
 {
-    "version":  "1.36.0",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.0.exe",
-    "notes":  "Fixed: your bots were running an old copy of their script - including the Penicillin fix, which never reached them\nBots now post on the interval you set instead of every 30 minutes\nRadius Scout, Prestige Monitor and Hero Index can start themselves when a bot launches\nNew: minimize or start OPTiC in the system tray\nSettings rebuilt as one page, with a theme picker\nSeparate alert thresholds for Food, Lumber, Stone, Iron and Gold\nFavorites list view, redesigned Groups and Map Data, exact hero and troop numbers",
+    "version":  "1.36.1",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.1.exe",
+    "notes":  "Fixed: Favorites cards were hiding summary fields you had chosen - cards now grow to fit every field\nFixed: the Favorites list view was still a grid with overlapping text - it is now one full-width row per account with aligned columns",
     "mandatory":  false
 }
