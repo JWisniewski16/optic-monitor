@@ -1,6 +1,6 @@
 {
-    "version":  "1.36.1",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.1.exe",
-    "notes":  "Fixed: Favorites cards were hiding summary fields you had chosen - cards now grow to fit every field\nFixed: the Favorites list view was still a grid with overlapping text - it is now one full-width row per account with aligned columns",
+    "version":  "1.36.2",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.2.exe",
+    "notes":  "Fixed: Anabasis, Epitomes, Sigils and Vesta Blessing were each showing a different item entirely - all four now read the item they name\nFixed: On Wars was a blended figure that stored as 0 on almost every account - it is a straight count of On War items now\nNew: Silver Keys has its own column\nEvery sidebar and top-bar icon redrawn as one matching set - no more emoji\nNew loading screen, with a progress bar that tracks something real\nYour tier now shows in the sidebar on every tab, with supporters thanked and a link to their key\nStart and stop are colour coded without hovering\nYour name or avatar opens the licence page; that page is much shorter\nRequires relaunching your bots: the new script only takes effect when a bot next starts",
     "mandatory":  false
 }
