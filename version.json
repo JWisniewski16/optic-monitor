@@ -1,6 +1,6 @@
 {
-    "version":  "1.36.7",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.7.exe",
-    "notes":  "Much lighter on your CPU. The check that watches which bots are still running fired every 8 seconds and read your whole account list three times over, dragging every bot saved script text along with it - so it spiked the CPU every few seconds all day. It now reads only what it needs, once.\nThe Bots page opens straight away. It used to send nearly 2MB before it could draw a single row; that is 29 times smaller now, so your accounts appear immediately.\nNo need to relaunch your bots for this one.",
+    "version":  "1.36.8",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.8.exe",
+    "notes":  "Drag your labels into the order you want. Labelled groups in the Bots list were stuck in alphabetical order - grab a label heading and drag it where you want it. Drop one on Unlabelled to send it to the bottom. The arrangement is saved with your account, so it follows you to another PC.\nRound two on CPU usage. The five-second refresh was rebuilding the header counts by loading four entire tables and counting the rows, the map table among them - around 20,000 rows and growing. It counts them in the database now, resource totals are summed there too, and the launch check no longer probes the disk once per account every five seconds. About a quarter of the background work it used to do.\nNo need to relaunch your bots for this one.",
     "mandatory":  false
 }
