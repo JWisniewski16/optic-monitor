@@ -1,6 +1,6 @@
 {
     "version":  "1.36.7",
     "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.36.7.exe",
-    "notes":  "Fixes your own autorun scripts not running in your other cities. UPDATE AND THEN RELAUNCH YOUR BOTS - a bot reads its script when it starts, so a running bot keeps the old one.\nIn 1.36.3 the monitoring loop never finished in non-main cities, so anything you pasted in to run after it waited for a turn that never came. Only your main city keeps a loop running now, exactly as -mc 1 has always meant.\nUpdates now show up the moment they are released instead of up to five minutes later.\nThe Bots list column is now called Label, and separators can be given one too so a divider moves with the bots it belongs to.",
+    "notes":  "Much lighter on your CPU. The check that watches which bots are still running fired every 8 seconds and read your whole account list three times over, dragging every bot saved script text along with it - so it spiked the CPU every few seconds all day. It now reads only what it needs, once.\nThe Bots page opens straight away. It used to send nearly 2MB before it could draw a single row; that is 29 times smaller now, so your accounts appear immediately.\nNo need to relaunch your bots for this one.",
     "mandatory":  false
 }
