@@ -1,6 +1,6 @@
 {
-    "version":  "1.37.1",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.1.exe",
-    "notes":  "Bots no longer start the instant OPTiC opens. There is a ten second wait now, and it is a floor rather than a default - the old three seconds was effectively immediate, and a second path could start the fleet even earlier. Raise it under Bots, Automation if your machine is slow to wake up.\nYour window goes back exactly where you left it. Dragging it flush to the left edge or down to the taskbar did not stick: Windows gives a window an invisible border a few pixels wide on those edges, and OPTiC was pulling it back inside.\nThe pop-out is smaller and remembers itself - name, server, status and start/stop, reopening at the size and position you left it.\nA bot that has never reported now gets the red ! as well. It could only appear for bots the app had heard from before, so the one most likely to be broken was the one exempt from the check.",
+    "version":  "1.37.2",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.2.exe",
+    "notes":  "The top licence tier is now called APEX. It shows as APEX in the sidebar and on the Licence page instead of Owner - nothing about your key or what it unlocks has changed.",
     "mandatory":  false
 }
