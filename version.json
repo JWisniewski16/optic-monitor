@@ -1,6 +1,6 @@
 {
-    "version":  "1.37.2",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.2.exe",
-    "notes":  "The top licence tier is now called APEX. It shows as APEX in the sidebar and on the Licence page instead of Owner - nothing about your key or what it unlocks has changed.",
+    "version":  "1.37.3",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.3.exe",
+    "notes":  "Packaging tidy-up: some bundled files now travel inside the program instead of sitting loose in its folder. Nothing to do on your end.",
     "mandatory":  false
 }
