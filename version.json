@@ -1,6 +1,6 @@
 {
-    "version":  "1.37.4",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.4.exe",
-    "notes":  "Top-tier keys unlock properly. A key on the top tier did not always unlock everything it should unless it was running on the machine the licence was issued from - it now applies wherever the key is used.",
+    "version":  "1.37.5",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.5.exe",
+    "notes":  "Bundled scripts stay up to date. A file left behind by an older version could stop a bundled script from updating, so it kept serving the old copy - the installer clears those out and the app no longer reads them.",
     "mandatory":  false
 }
