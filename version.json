@@ -1,6 +1,6 @@
 {
-    "version":  "1.37.3",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.3.exe",
-    "notes":  "Packaging tidy-up: some bundled files now travel inside the program instead of sitting loose in its folder. Nothing to do on your end.",
+    "version":  "1.37.4",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.4.exe",
+    "notes":  "Top-tier keys unlock properly. A key on the top tier did not always unlock everything it should unless it was running on the machine the licence was issued from - it now applies wherever the key is used.",
     "mandatory":  false
 }
