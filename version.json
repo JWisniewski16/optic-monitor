@@ -1,6 +1,6 @@
 {
-    "version":  "1.37.5",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.5.exe",
-    "notes":  "Bundled scripts stay up to date. A file left behind by an older version could stop a bundled script from updating, so it kept serving the old copy - the installer clears those out and the app no longer reads them.",
+    "version":  "1.37.6",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.6.exe",
+    "notes":  "Fresher data everywhere. Some of the app data requests could be answered from a stale cached copy instead of being read again, so a panel could sit showing something that had already changed.\nServer names are matched regardless of case - a saved setting stored under one spelling could not be found by a lookup that used a different one.",
     "mandatory":  false
 }
