@@ -1,6 +1,6 @@
 {
-    "version":  "1.37.6",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.6.exe",
-    "notes":  "Fresher data everywhere. Some of the app data requests could be answered from a stale cached copy instead of being read again, so a panel could sit showing something that had already changed.\nServer names are matched regardless of case - a saved setting stored under one spelling could not be found by a lookup that used a different one.",
+    "version":  "1.37.7",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.37.7.exe",
+    "notes":  "Cities you teleport are no longer counted twice. A city was recognised by where it sat on the map, so moving one left the old copy behind holding the resources it had at the time - an account with 480b food could read as 1.9t, and every total built from your cities was affected. RELAUNCH YOUR BOTS after updating so they send the new information.\nTwo accounts with the same name on different servers no longer share a Max Hero, cities, items or resource totals - everything matches on the account and its server now.\nLive City Scripts is on the Tools page marked In Testing. It is unfinished and there so it can be tested; nothing it does can harm your accounts.",
     "mandatory":  false
 }
