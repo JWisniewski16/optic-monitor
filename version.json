@@ -1,6 +1,6 @@
 {
-    "version":  "1.38.1",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.38.1.exe",
-    "notes":  "Your bots come online first, then tidy up. Clearing old reports was happening before a bot had reported anything, and on an account with a lot of them that takes minutes - the bot looked silent and picked up a red ! the whole time. It reports first now and clears afterwards.\nYou can turn report clearing off. It stays on unless you change it - set it per account, or on a whole selection with Bulk Edit.\nA warning when bots are running an older script. A bot keeps whatever reporting script it read when it launched, so after an update the running ones are still on the old one. The Bots page says how many, and can select exactly those.\nStop several bots at once from the selection bar.\nYour tier survives a licence server outage. If the check could not be reached while OPTiC was starting, supporters were shown as Free until it answered. Your last confirmed tier is now kept for up to 14 days when the check cannot get through.",
+    "version":  "1.38.2",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.38.2.exe",
+    "notes":  "Sorting by Max Hero on the Dashboard works. Clicking that column did nothing - the tick and warning marks in front of the number meant the sort could not read it as a number, so every row counted as zero.\nChoose the columns on the Dashboard. The Active list has its own Columns button now, the same as the Data tabs, and Honor is available there for the first time. Sorting follows whatever you leave showing.\nEmpty a group without deleting it. Groups have an Empty button beside Edit - it takes every account out but keeps the group, its columns and its hero threshold, so you can refill it from + Members. The accounts themselves are never affected.",
     "mandatory":  false
 }
