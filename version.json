@@ -1,6 +1,6 @@
 {
-    "version":  "1.40.1",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.1.exe",
-    "notes":  "Auto-launch upgrades. A bot you stop by hand now comes back on its own after about ten seconds, as long as Auto Launch and Keep Bots Running are both on for that account. Turn either one off and it stays exactly where you put it.\nAlerts keep watch while OPTiC is minimised. Alerts are now checked on a steady cadence whether the window is open or tucked away in the tray, so anything that wants your attention reaches you when it happens rather than the next time you look.",
+    "version":  "1.40.2",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.2.exe",
+    "notes":  "Alliance and holiday tags follow the right server. An account that plays on more than one server could pick up the alliance from the other one in the Bots list, and its holiday tag with it. Each row now matches on the account and the server together, so both read from the server you are looking at.",
     "mandatory":  false
 }
