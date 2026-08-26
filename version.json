@@ -1,6 +1,6 @@
 {
-    "version":  "1.40.2",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.2.exe",
-    "notes":  "Alliance and holiday tags follow the right server. An account that plays on more than one server could pick up the alliance from the other one in the Bots list, and its holiday tag with it. Each row now matches on the account and the server together, so both read from the server you are looking at.",
+    "version":  "1.40.3",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.3.exe",
+    "notes":  "Maintenance update. Fixes and tidying under the hood. Nothing changes in how you use OPTiC, and there is nothing you need to do after updating.",
     "mandatory":  false
 }
