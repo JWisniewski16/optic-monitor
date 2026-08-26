@@ -1,6 +1,6 @@
 {
-    "version":  "1.40.3",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.3.exe",
-    "notes":  "Maintenance update. Fixes and tidying under the hood. Nothing changes in how you use OPTiC, and there is nothing you need to do after updating.",
+    "version":  "1.40.4",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.4.exe",
+    "notes":  "Maintenance update. More fixes under the hood. Nothing changes in how you use OPTiC, and there is nothing you need to do after updating.",
     "mandatory":  false
 }
