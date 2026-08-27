@@ -1,6 +1,6 @@
 {
-    "version":  "1.40.6",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.6.exe",
-    "notes":  "Improvements to City Automation reading and writing. City Automation now reads every city file it is given, including cities holding more than one saved set of goals, and it leaves the sets it is not changing exactly where they are.",
+    "version":  "1.40.7",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.7.exe",
+    "notes":  "Hero attack now counts Excalibur. A hero carrying Excalibur was being listed at its base attack, so the strongest hero in an account could read lower than it actually hits for. Attack now shows the effective figure everywhere it appears, with an EXC tag on the heroes currently carrying one, so it is easy to see which need another. Your bots need to be relaunched once before they start reporting it.\nOpen a bot on a chosen city. Set a city number on a bot and its window opens there instead of wherever it feels like. In the bot editor, or on a whole selection at once through Bulk edit. Blank leaves it alone.\nThe bot editor is easier to read. The settings are grouped by when they matter - who the account is, how the bot starts, and what it does once it is running - rather than one long list. Same settings, same places to save them.",
     "mandatory":  false
 }
