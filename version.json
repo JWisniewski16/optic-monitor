@@ -1,6 +1,6 @@
 {
-    "version":  "1.40.4",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.4.exe",
-    "notes":  "Maintenance update. More fixes under the hood. Nothing changes in how you use OPTiC, and there is nothing you need to do after updating.",
+    "version":  "1.40.5",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.40.5.exe",
+    "notes":  "City Automation is now part of VIP. Set the goals and the startup script for each city from the app, and have them written into the bot as it launches instead of pasting into every town by hand. It is still marked IN TESTING. It replaces what a city currently holds, so read what the confirmation says before you write - it tells you how many cities are about to change.\nThe dashboard follows the window. Narrow the window and the sidebar folds away behind the menu button, buttons grow to a size you can hit with a finger, and the smallest labels get bigger. Nothing changes at full size.",
     "mandatory":  false
 }
