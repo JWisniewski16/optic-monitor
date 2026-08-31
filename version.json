@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.10",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.10.exe",
-    "notes":  "Map Data filters by server again. Picking a server at the top stopped filtering that page, which had been the case since 1.41.3. Nothing was lost or changed in your saved map data — only what the page chose to show you.\n\nSome accounts went missing when you filtered by a server. A server name could be stored with different capitals and the two were treated as different servers, quietly leaving accounts out — including from a per-server launch. Corrected automatically on first start.\n\nServer tabs on the Bots page: All, then one per server with a count, so you can work one server at a time. Your labels and separators follow their own accounts.\n\nThe More menu no longer runs past its edge.",
+    "version":  "1.41.11",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.11.exe",
+    "notes":  "Fixes a startup error some of you saw after 1.41.10: a red bar reading “Some startup steps failed — Database initialise”.\n\nIt happened when the same account was set up twice on the same server under different capitals (ss71 and SS71). The tidy-up added in 1.41.10 tried to store both spellings the same way, which is not allowed for two separate entries, so it stopped — and the startup steps after it were skipped with it.\n\nNothing was lost. No account, password or setting was deleted on any version. The tidy-up now leaves such a pair alone and startup finishes normally. If you now see the same account twice on one server, that duplicate was always there — delete whichever one you do not use.\n\nAlso fixed: saving one of two such duplicates could write over the other one’s password and settings instead of its own.",
     "mandatory":  false
 }
