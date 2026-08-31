@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.9",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.9.exe",
-    "notes":  "Drag a bot into any label and it stays there. Dragging a row into a different label moved it for a moment and then put it back, because the drag saved the row\u0027s position but never its label.\nThe running order behind the list now matches what you see — your labels in the order you arranged them, each one in one unbroken block. Dragging a whole label above or below another moves its accounts with it.",
+    "version":  "1.41.10",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.10.exe",
+    "notes":  "Map Data filters by server again. Picking a server at the top stopped filtering that page, which had been the case since 1.41.3. Nothing was lost or changed in your saved map data — only what the page chose to show you.\n\nSome accounts went missing when you filtered by a server. A server name could be stored with different capitals and the two were treated as different servers, quietly leaving accounts out — including from a per-server launch. Corrected automatically on first start.\n\nServer tabs on the Bots page: All, then one per server with a count, so you can work one server at a time. Your labels and separators follow their own accounts.\n\nThe More menu no longer runs past its edge.",
     "mandatory":  false
 }
