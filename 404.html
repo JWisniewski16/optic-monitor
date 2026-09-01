@@ -128,6 +128,10 @@
       if (!to) return fail();
       var dest = new URL(to, location.origin);
       if (dest.origin !== location.origin) return fail();
+      // Hand the code on. The viewer publishes whatever it opens - that is how
+      // the archive fills - so without this every open of a share link filed a
+      // second copy of the report and put it on the feed again.
+      dest.searchParams.set("c", code);
       location.replace(dest.href);
     })
     .catch(fail);

@@ -666,7 +666,11 @@ function scout(doc){
 
 /* ---------- flow ---------- */
 var _raw="";
-function show(txt,srcUrl){
+/* `known` is what we already know because this report arrived as a share LINK
+   rather than as a paste: its payload verbatim, and its short code when the
+   resolver passed one on. Both exist for one reason - opening a share link must
+   not file the report a second time. See publish(). */
+function show(txt,srcUrl,known){
   var p=parse(txt);
   _raw=txt;_src=srcUrl||"";
   el("out").innerHTML=p.type==="battle"?battle(p.doc):scout(p.doc);
@@ -678,11 +682,17 @@ function show(txt,srcUrl){
   k.className="kind "+p.type;
   _parsed=p;
   _code="";_short="";
-  encode(txt).then(function(h){
+  known=known||{};
+  // Re-encoding a payload that arrived intact can only risk producing a slightly
+  // different string for the same report, which would read as a new one.
+  (known.hash?Promise.resolve(known.hash):encode(txt)).then(function(h){
     _hash=h;
     _full=location.origin+location.pathname+"#"+h;
+    if(known.code){_code=known.code;_short=location.origin+"/"+known.code;}
     setLink();
-    publish();
+    // Already has a code, so it is already in the archive. Publishing would only
+    // ask for the one it has.
+    if(!known.code)publish();
   });
   window.scrollTo(0,0);
 }
@@ -809,7 +819,16 @@ function summarize(p){
 /* Every report opened here is published, not only the ones somebody chooses to
    share. That is deliberate: the archive is what the battle calculator gets
    calibrated against, so a report viewed and not recorded is a report lost.
-   Visibility only decides whether it also shows up in the public feed. */
+   Visibility only decides whether it also shows up in the public feed.
+
+   Every report OPENED, though - not every report VIEWED. Opening a share link
+   opens a report, so this used to mint a fresh code for somebody else's battle
+   on every single view and put another copy of it on the feed. Two guards now:
+   show() skips this entirely when the resolver handed over a code, and the
+   server matches the payload against the archive and returns the code the
+   report already has. Either one alone fixes the feed; both, because a long
+   share link carries no code and the desktop app publishes down the same
+   route. */
 function publish(){
   if(!PUBLISH||!_hash||!_parsed)return null;
   _pubErr="";
@@ -878,8 +897,16 @@ setLink();
 (function(){
   var h=location.hash.slice(1);
   if(h){
+    // ?c= is the short code the resolver already looked up. Validated before it
+    // is used: it arrives in a URL anyone can edit and it is shown straight back
+    // as the share link. Dropped from the address bar once read, so what a
+    // reader copies from there is the plain report URL.
+    var c="";
+    try{c=new URLSearchParams(location.search).get("c")||"";}catch(e){}
+    if(!/^[A-Za-z0-9]{4,12}$/.test(c))c="";
+    if(location.search){try{history.replaceState(null,"",location.pathname+location.hash);}catch(e){}}
     decode(h).then(function(txt){
-      try{show(txt);}catch(e){
+      try{show(txt,"",{hash:h,code:c});}catch(e){
         el("warn").innerHTML="<b>That shared link could not be read.</b> "+esc(e.message);
         el("warn").style.display="block";
       }
