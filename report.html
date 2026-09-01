@@ -456,11 +456,27 @@ async function decode(h){
 }
 
 /* ---------- parse ---------- */
+
+/* Host "battless37" -> "ss37", "battle200" -> "s200". Strip the "battle" the game
+   puts in front of every report host, then put back the "s" the numbered servers
+   drop from theirs. Same rule in dashboard.html and in ReportServer.gs. */
+function srvFrom(u){
+  var host=String(u||"").replace(/^https?:\/\//i,"").split("/")[0].split(".")[0];
+  if(!/^battle/i.test(host))return "";
+  var id=host.slice(6).toLowerCase();
+  return id?(/^[0-9]/.test(id)?"s"+id:id):"";
+}
+
 function parse(txt){
   var doc=new DOMParser().parseFromString(txt.trim(),"text/xml");
   if(doc.querySelector("parsererror"))throw new Error("That does not look like report XML.");
-  if(doc.querySelector("battleReport"))return {type:"battle",doc:doc};
-  if(doc.querySelector("scoutReport")||doc.querySelector("scoutInfo"))return {type:"scout",doc:doc};
+  /* The report carries its own address, and it is the only trustworthy source
+     for which server it came from - a paste has no URL to go on at all, and
+     nothing else on this page knows. <reportData reportUrl="battless37.evony.com/..."> */
+  var rd=doc.querySelector("reportData");
+  var meta={server:srvFrom(rd&&rd.getAttribute("reportUrl"))};
+  if(doc.querySelector("battleReport"))return {type:"battle",doc:doc,meta:meta};
+  if(doc.querySelector("scoutReport")||doc.querySelector("scoutInfo"))return {type:"scout",doc:doc,meta:meta};
   throw new Error("No scout or battle report found in that XML.");
 }
 function units(nodes,countAttr,loseAttr){
@@ -829,6 +845,14 @@ function summarize(p){
    report already has. Either one alone fixes the feed; both, because a long
    share link carries no code and the desktop app publishes down the same
    route. */
+/* The XML's own address first; the link it was opened from only as a fallback,
+   because a report fetched by URL states the same server twice and a pasted one
+   states it once. */
+function reportMeta(){
+  var m=(_parsed&&_parsed.meta)||{};
+  return {server:m.server||srvFrom(_src)};
+}
+
 function publish(){
   if(!PUBLISH||!_hash||!_parsed)return null;
   _pubErr="";
@@ -841,7 +865,7 @@ function publish(){
     headers:{"Content-Type":"text/plain;charset=utf-8"},
     body:JSON.stringify({
       action:"publish",kind:_parsed.type,visibility:"public",
-      payload:_hash,summary:summarize(_parsed),sourceUrl:_src,meta:_parsed.meta||{}
+      payload:_hash,summary:summarize(_parsed),sourceUrl:_src,meta:reportMeta()
     })
   })
   .then(function(r){return r.json();})
