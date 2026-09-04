@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.11",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.11.exe",
-    "notes":  "Fixes a startup error some of you saw after 1.41.10: a red bar reading “Some startup steps failed — Database initialise”.\n\nIt happened when the same account was set up twice on the same server under different capitals (ss71 and SS71). The tidy-up added in 1.41.10 tried to store both spellings the same way, which is not allowed for two separate entries, so it stopped — and the startup steps after it were skipped with it.\n\nNothing was lost. No account, password or setting was deleted on any version. The tidy-up now leaves such a pair alone and startup finishes normally. If you now see the same account twice on one server, that duplicate was always there — delete whichever one you do not use.\n\nAlso fixed: saving one of two such duplicates could write over the other one’s password and settings instead of its own.",
+    "version":  "1.41.12",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.12.exe",
+    "notes":  "Minor bug fixes.",
     "mandatory":  false
 }
