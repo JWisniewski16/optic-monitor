@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.12",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.12.exe",
-    "notes":  "Minor bug fixes.",
+    "version":  "1.41.13",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.13.exe",
+    "notes":  "This update covers everything since 1.41.12.\n\nSome paid keys were being treated as unlicensed - every VIP page hidden and every script card locked, while the licence screen still named the correct tier.\n\nConfirmation boxes no longer open on the destructive answer, and Enter only confirms once you have deliberately moved to the Confirm button.\n\nShow more stays open on Cities, Heroes and Scouts instead of being undone a few seconds later by the next refresh, and Low Loyalty rows always open the city you clicked on.\n\nMap Data and Heroes are far lighter, the Report Viewer opens its archive instantly, and Low Loyalty and Failed Scouts no longer wipe the text you were selecting every five seconds.\n\nScout reports show traps, abatis, rolling logs, trebuchets, arrow towers and transports to the exact unit, and columns showing shortened numbers now sort on the real value rather than the shortened text.\n\nA scout report is no longer lost to a moment of bad internet. It is retried three times, a few minutes apart, before it is given up on - and the game deletes its own copy within about a day.\n\nItem exports to Google Sheets were writing into the wrong columns from Ports onward; one sync after updating repairs the existing rows too.\n\nPlus a new Stuck Waves script for supporters, a star on your strongest heroes, alliance names that update without a restart, bots that show as closed almost immediately, and a nightly check on the database.",
     "mandatory":  false
 }
