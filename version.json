@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.16",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.16.exe",
-    "notes":  "This update covers everything since 1.41.15.\n\nThe Settings page is one page again. Alert Rules and Automation were panels on the Alerts and Bots pages, so most of what you can configure was nowhere near Settings; both are on the Settings page now, and the buttons that used to open them take you straight there. The page was re-laid out to fit a screen without scrolling, with tighter, clearly bordered cards and nothing padded out to match its neighbour.\n\nThere is a search box at the top of Settings that filters the page as you type, including words that do not appear on screen such as webhook, proxy, tray and sheets.\n\nBots that are still starting are no longer counted as strays. The badge counted any bot process without a named window, which includes one that is still logging in, so a slow login looked like a stray and closing strays could kill a bot that was coming up perfectly.\n\nThe Auto-launch tile keeps saying whether it is on while a launch queue is running, instead of replacing its label with the number left to go.",
+    "version":  "1.41.17",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.17.exe",
+    "notes":  "This update covers everything since 1.41.16.\n\nSettings looks like a settings page again. The last update sized every card to its own content, which left each row ending in a ragged line of different-sized boxes, and chose so many columns that a short row sat half empty. Cards are now the same width, rows line up, and the last row of each group widens to fill the width instead of trailing off. Three separate headings for the same page became one.",
     "mandatory":  false
 }
