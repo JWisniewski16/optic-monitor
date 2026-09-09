@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.17",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.17.exe",
-    "notes":  "This update covers everything since 1.41.16.\n\nSettings looks like a settings page again. The last update sized every card to its own content, which left each row ending in a ragged line of different-sized boxes, and chose so many columns that a short row sat half empty. Cards are now the same width, rows line up, and the last row of each group widens to fill the width instead of trailing off. Three separate headings for the same page became one.",
+    "version":  "1.41.18",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.18.exe",
+    "notes":  "This is a maintenance release.\n\nIt fixes tooling that only appears on some accounts. Nothing on your pages moves, no setting changes, and there is nothing you need to do after updating.",
     "mandatory":  false
 }
