@@ -1,6 +1,6 @@
 {
-    "version":  "1.41.19",
-    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.19.exe",
-    "notes":  "This is a maintenance release.\n\nIt carries more fixes to tooling that only appears on some accounts. Nothing on your pages moves, no setting changes, and there is nothing you need to do after updating.",
+    "version":  "1.41.20",
+    "download":  "https://github.com/OPTiC-DEV-AGE1/optic-monitor/releases/latest/download/OPTiCAccountMonitor_Setup_1.41.20.exe",
+    "notes":  "This is a maintenance release.\n\nIt fixes tooling that only appears on some accounts, and adds saved presets to it. Nothing on your pages moves, no setting changes, and there is nothing you need to do after updating.",
     "mandatory":  false
 }
